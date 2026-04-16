@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Counter from "../components/Counter.tsx";
+---
+
+<BaseLayout title="Astro + React">
+  <main class="flex min-h-screen flex-col items-center justify-center">
+    <h1 class="text-4xl font-bold">Astro + React Boilerplate</h1>
+    <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm">
+      Static Astro shell · React islands via <code class="font-mono bg-gray-100 dark:bg-gray-800 px-1 rounded">client:load</code>
+    </p>
+    <Counter client:load />
+  </main>
+</BaseLayout>
