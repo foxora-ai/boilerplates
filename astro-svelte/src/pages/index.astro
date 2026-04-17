@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Counter from "../components/Counter.svelte";
+---
+<BaseLayout title="Astro + Svelte">
+  <main class="flex min-h-screen flex-col items-center justify-center">
+    <h1 class="text-4xl font-bold">Astro + Svelte Boilerplate</h1>
+    <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">
+      Static Astro shell · Svelte 5 islands via <code class="font-mono bg-gray-100 dark:bg-gray-800 px-1 rounded">client:load</code>
+    </p>
+    <Counter client:load />
+  </main>
+</BaseLayout>
